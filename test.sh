@@ -33,4 +33,8 @@ ls -Art ${dir}
 
 find ${dir} -mtime +3 -exec mv "{}" ${backupdir};
 
+
+cd $(backup)
+rm -f
+
 printf "Ending script"
